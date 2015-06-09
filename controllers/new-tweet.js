@@ -1,9 +1,11 @@
 Twitter.NewTweetController = Ember.Controller.extend({
   actions: {
     sendTweet: function() {
-      var newTweet = { text : text.value };
+      now = new Date();
+      var newTweet = { text : text.value, date: now };
       tweets.addObject(newTweet);
       this.set('text', '');
+
     }
   }
 });

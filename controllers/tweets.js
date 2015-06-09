@@ -1,4 +1,6 @@
 Twitter.TweetsController = Ember.ArrayController.extend({
+  sortProperties: ['date'],
+  sortAscending: false,
   isTweeting: false,
   actions: {
     clickSend: function() {
