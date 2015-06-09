@@ -1,11 +1,9 @@
-<div class="row">
+<div class="row well">
   <form>
-    <div class="col-md-4">
     <div class="form-group">
       <label for="text">Send a Tweet</label>
       {{input id="text" class="form-control" value=text}}
     </div>
-  <button class="btn btn-block btn-primary" {{action 'send'}}>Send</button>
-</div>
-</form>
+  <button class="btn btn-block btn-primary" {{action 'sendTweet'}}>Send Tweet</button>
+  </form>
 </div>
