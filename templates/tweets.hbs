@@ -7,10 +7,19 @@
   <a href="#" {{action 'clickSend'}}>New Tweet</a>
   {{/if}}
 </div>
+
+<!-- dateShowing is: {{dateShowing}}
+<br>
+isTweeting is: {{isTweeting}} -->
+<br>
 <div class="row well">
   <ul>
-    {{#each}}
-    <li>{{text}}</li>
+    {{#each tweet in this}}
+    <li>
+      {{#if dateShowing}} {{tweet.date}} {{/if}}
+      <a href="#" {{action "clickTweet"}}>{{tweet.text}}</a>
+
+      </li>
     {{/each}}
   </ul>
 </div>

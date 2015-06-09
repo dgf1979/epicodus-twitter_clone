@@ -2,7 +2,7 @@
   <form>
     <div class="form-group">
       <label for="text">Send a Tweet</label>
-      {{input id="text" class="form-control" value=text placeholder="'I Have No Social Life'"}}
+      {{input id="text" class="form-control" maxlength=140 value=text placeholder="'I Have No Social Life'"}}
     </div>
   <button class="btn btn-block btn-primary" {{action 'sendTweet'}}>Send Tweet</button>
   </form>
