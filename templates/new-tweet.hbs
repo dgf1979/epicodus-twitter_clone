@@ -1,0 +1,9 @@
+<h2>Send a Tweet</h2>
+<form>
+  <div class="form-group">
+    <label for="text">Text</label>
+    {{textarea id="text" class="form-control" rows="1" value=text}}
+  </div>
+
+  <button class="btn btn-primary" {{action 'send'}}>Send</button>
+</form>
